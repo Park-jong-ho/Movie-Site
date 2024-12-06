@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 // JSON 파일을 import합니다.
 import movieDetailData from '../Data/movieDetailData.json';
 
+// movie 상태 초기화
 const MovieDetail = () => {
   const [movie, setMovie] = useState(null);
 
@@ -11,6 +12,7 @@ const MovieDetail = () => {
     setMovie(movieDetailData);
   }, []);
 
+  //데이터 로드 전 로딩 메세지 출력
   if (!movie) return <div>Loading...</div>;
 
   return (

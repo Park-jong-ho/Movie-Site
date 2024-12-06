@@ -5,11 +5,13 @@ const NavBar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-left">
-        <Link to="/" className="logo">
+        {/* 홈페이지 */}
+        <Link to="/" className="logo"> 
           oz무비
         </Link>
       </div>
       <div className="navbar-center">
+        {/* 검색창 */}
         <input
           type="text"
           placeholder="Search Movies..."
@@ -17,6 +19,7 @@ const NavBar = () => {
         />
       </div>
       <div className="navbar-right">
+        {/* 로그인, 회원가입 */}
         <Link to="/login" className="login-btn">Login</Link>
         <Link to="/signup" className="signup-btn">Sign Up</Link>
       </div>

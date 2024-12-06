@@ -1,4 +1,4 @@
-import { Outlet } from 'react-router-dom';
+import { Outlet } from 'react-router-dom'; //자식 라우트를 렌더링
 import NavBar from './NavBar';
 
 const Layout = () => {

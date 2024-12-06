@@ -2,9 +2,11 @@
 
 /* 영화 리스트를 감싸는 div */
 /* 화면 크기에 따라 자동으로 줄바꿈 되도록 */
-/* *{
+
+.container {
   background-color: black;
-} */
+  margin: -8px;
+}
 
 .movie-list {
   display: flex;
@@ -15,10 +17,11 @@
   background-color: black; /* 배경 색상 */
 }
 
+
 /* 각 영화 카드 */
 .movie-card {
   width: 200px;
-  background-color: darkgray;
+  background-color: white;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;

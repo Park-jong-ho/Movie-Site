@@ -1,0 +1,78 @@
+/* Swiper 컨테이너 스타일 */
+.slider-container {
+  position: relative;
+  width: 100%;
+  padding: 20px 0;
+}
+
+/* 개별 슬라이드 스타일 */
+.wiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s ease;
+}
+
+/* 포스터 카드 스타일 */
+.swiper-movie-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 8px;
+  transform: scale(0.8); /* 기본 크기 */
+}
+
+/* 포스터 이미지 스타일 */
+.swiper-movie-poster {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+/* 슬라이드가 중앙에 있을 때 커지게 만들기 */
+.swiper-slide-active .swiper-movie-card {
+  transform: scale(1); /* 중앙 슬라이드 크기 */
+  transition: transform 0.3s ease;
+}
+
+.swiper-slide-next .swiper-movie-card,
+.swiper-slide-prev .swiper-movie-card {
+  transform: scale(0.7); /* 오른쪽, 왼쪽 슬라이드 크기 */
+  transition: transform 0.3s ease;
+}
+
+/* 내비게이션 버튼 스타일 */
+.swiper-button-next,
+.swiper-button-prev {
+  color: white;
+  font-size: 30px; /* 버튼 크기 */
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  transform: translateY(-50%);
+}
+
+.swiper-button-next {
+  right: 10px;
+}
+
+.swiper-button-prev {
+  left: 10px;
+}
+
+/* 페이지네이션 버튼 스타일 */
+.swiper-pagination-bullet {
+  background-color: white;
+  opacity: 0.6;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #ffb400;
+  opacity: 1;
+}
