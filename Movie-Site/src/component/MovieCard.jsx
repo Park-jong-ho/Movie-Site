@@ -1,6 +1,7 @@
 
 import { Link } from 'react-router-dom';
 
+
 // props 받기
 const MovieCard = ({ id, posterPath, title, voteAverage }) => {
   const imageUrl = `https://image.tmdb.org/t/p/w500${posterPath}`;
