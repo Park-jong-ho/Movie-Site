@@ -5,14 +5,6 @@
   padding: 20px 0;
 }
 
-/* 개별 슬라이드 스타일 */
-.wiper-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: transform 0.5s ease;
-}
-
 /* 포스터 카드 스타일 */
 .swiper-movie-card {
   position: relative;
@@ -66,13 +58,3 @@
   left: 10px;
 }
 
-/* 페이지네이션 버튼 스타일 */
-.swiper-pagination-bullet {
-  background-color: white;
-  opacity: 0.6;
-}
-
-.swiper-pagination-bullet-active {
-  background-color: #ffb400;
-  opacity: 1;
-}
