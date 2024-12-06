@@ -3,10 +3,13 @@ import NavBar from './NavBar';
 
 const Layout = () => {
   return (
-    <div>
+    <div className="layout">
+      {/* 상단 NavBar */}
       <NavBar />
-      <div className="content">
-        <Outlet /> {/* 여기서 라우팅된 컴포넌트가 렌더링됩니다. */}
+      
+      {/* 페이지별 콘텐츠가 표시될 위치 */}
+      <div className="main-content">
+        <Outlet />
       </div>
     </div>
   );
