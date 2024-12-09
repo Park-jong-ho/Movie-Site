@@ -16,7 +16,7 @@ const App = () => {
   useEffect(() => {
     // 영화 데이터 가져오기
     const fetchMovies = async () => {
-      const response = await fetch(`${TMDB_API_URL}/movie/popular?api_key=${apiKey}&language=en-US&page=1`);
+      const response = await fetch(`${TMDB_API_URL}/movie/popular?api_key=${apiKey}&language=ko-KR&page=1`);
       const data = await response.json();
       // 성인 영화를 제외
       const filteredMovies = data.results.filter(movie => !movie.adult);
