@@ -10,6 +10,7 @@ const App = () => {
   // CRA에서는 process.env로 VITE에서는 import.meta.env로
   // Prefix 붙이는 방식 : CRA는 REACT_APP_..., VITE는 VITE_...형식으로 작성
   const apiKey = import.meta.env.VITE_TMDB_API_KEY; // .env에서 API Key 가져오기
+  console.log(apiKey);
 
   // API 호출 (컴포넌트가 마운트될 때 TMDB API 호출)
   useEffect(() => {
