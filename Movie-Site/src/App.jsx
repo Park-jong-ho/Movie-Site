@@ -18,7 +18,8 @@ const App = () => {
     const fetchMovies = async () => {
       const response = await fetch(`${TMDB_API_URL}/movie/popular?api_key=${apiKey}&language=en-US&page=1`);
       const data = await response.json();
-      const filteredMovies = data.results.filter(movie => !movie.adult); // 성인 영화를 제외
+      // 성인 영화를 제외
+      const filteredMovies = data.results.filter(movie => !movie.adult);
       setMovies(filteredMovies); // 상태에 영화 데이터 설정
     };
 
