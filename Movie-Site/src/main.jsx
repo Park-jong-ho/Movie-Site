@@ -4,7 +4,6 @@ import App from './App';
 import './App.css';
 import MovieDetail from './component/MovieDetail';
 import movieDetailData from './data/movieDetailData.json'; // import 구문으로 변경
-import NavBar from './component/Navbar'
 import Layout from './component/Layout'
 
 const root = ReactDOM.createRoot(document.getElementById('root')); // createRoot 사용
@@ -24,3 +23,4 @@ root.render(
     </Routes>
   </Router>
 );
+
