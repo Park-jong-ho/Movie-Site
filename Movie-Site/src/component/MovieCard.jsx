@@ -14,6 +14,7 @@ const MovieCard = ({ id, posterPath, title, voteAverage }) => {
         <h3 className="movie-title">{title}</h3>
         <p className="movie-rating">
           {/* 소수점 두자리까지만 표시, 마지막 자리의 0은 제거 */}
+          {/* 부동 소수점 숫자(float point number)를 반환한다. */}
           <span>★</span> {parseFloat(voteAverage.toFixed(2))}
         </p>
       </Link>

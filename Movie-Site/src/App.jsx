@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 import MovieCard from './component/MovieCard';
 import Slider from './component/Slider';
 
+// 외부 파일(.env)에 환경변수를 정의하여 변수로 받아오는 이유는 보안과 유지보수에 용이하기 때문
+
 // TMdb API 호출을 위한 URL
 const TMDB_API_URL = 'https://api.themoviedb.org/3';
 
@@ -17,6 +19,7 @@ const App = () => {
     // 영화 데이터 가져오기
     const fetchMovies = async () => {
       const response = await fetch(`${TMDB_API_URL}/movie/popular?api_key=${apiKey}&language=ko-KR&page=1`);
+      // fetch는 promise값이니 .json을 붙여줘야 사용가능하다.
       const data = await response.json();
       // 성인 영화를 제외
       const filteredMovies = data.results.filter(movie => !movie.adult);
