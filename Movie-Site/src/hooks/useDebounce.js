@@ -1,4 +1,3 @@
-// hooks/useDebounce.js
 import { useState, useEffect } from 'react';
 
 const useDebounce = (value, delay) => {
@@ -6,16 +5,16 @@ const useDebounce = (value, delay) => {
 
   useEffect(() => {
     const handler = setTimeout(() => {
-      setDebouncedValue(value);
+      setDebouncedValue(value);  // 지정된 지연 후 debouncedValue 업데이트
     }, delay);
 
-    // Cleanup function
+    // cleanup: 이전 타이머를 정리
     return () => {
       clearTimeout(handler);
     };
   }, [value, delay]);
 
-  return debouncedValue;
+  return debouncedValue;  // debouncedValue 반환
 };
 
 export default useDebounce;
