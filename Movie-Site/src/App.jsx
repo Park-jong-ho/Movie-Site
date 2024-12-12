@@ -6,6 +6,7 @@ import useDebounce from './hooks/useDebounce';  // useDebounce 훅을 가져옴
 
 const TMDB_API_URL = 'https://api.themoviedb.org/3';
 
+  // 다크모드 제거
 const App = () => {
   const { searchQuery } = useOutletContext();  // Layout에서 전달받은 searchQuery
   const [movies, setMovies] = useState([]);
